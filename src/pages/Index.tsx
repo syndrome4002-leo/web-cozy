@@ -349,7 +349,7 @@ const Index = () => (
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
-            to="/about"
+            to="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary-foreground text-primary font-semibold hover:bg-primary-foreground/90 transition-colors"
           >
             Contact Us <ArrowRight size={18} />
