@@ -80,8 +80,8 @@ const About = () => (
         <div className="glass-card p-8 text-left max-w-md mx-auto bg-section-dark/80">
           <div className="space-y-4 text-section-dark-foreground/80 text-sm">
             <p><span className="font-semibold text-section-dark-foreground">Email:</span> hello@pulsarit.com</p>
-            <p><span className="font-semibold text-section-dark-foreground">Phone:</span> +1 (555) 987-6543</p>
-            <p><span className="font-semibold text-section-dark-foreground">Address:</span> 123 Innovation Drive, San Francisco, CA 94105</p>
+            <p><span className="font-semibold text-section-dark-foreground">Phone:</span> +44 (161) 234-5678</p>
+            <p><span className="font-semibold text-section-dark-foreground">Address:</span> 42 Deansgate, Manchester, M3 2BA, UK</p>
           </div>
         </div>
       </div>

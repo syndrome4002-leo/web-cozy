@@ -20,11 +20,11 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h4 className="font-heading font-semibold text-hero-foreground mb-3">Contact</h4>
+        <h4 className="font-heading font-semibold text-hero-foreground mb-3">Contact Us</h4>
         <ul className="space-y-2 text-sm">
           <li>hello@pulsarit.com</li>
-          <li>+1 (555) 987-6543</li>
-          <li>San Francisco, CA</li>
+          <li>+44 (161) 234-5678</li>
+          <li>Manchester, UK</li>
         </ul>
       </div>
     </div>

@@ -6,6 +6,7 @@ const navItems = [
   { label: "Home", path: "/" },
   { label: "Services", path: "/services" },
   { label: "About Us", path: "/about" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
         </ul>
 
         <Link
-          to="/about"
+          to="/contact"
           className="hidden md:inline-flex px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
         >
           Get in Touch
