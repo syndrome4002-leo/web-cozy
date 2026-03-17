@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
+import { ScrollToTopButton } from "@/components/ScrollToTop";
 import { Mail, Phone, MapPin, Send, Clock, Globe } from "lucide-react";
 import { useState } from "react";
+import bg7 from "@/assets/bgs/7.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -68,8 +70,13 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="section-padding bg-section-dark">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+      <section className="relative section-padding bg-section-dark overflow-hidden">
+        <img
+          src={bg7}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none"
+        />
+        <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Form */}
           <div>
             <h2 className="font-heading text-3xl font-bold text-section-dark-foreground mb-8">Send us a Message</h2>
@@ -201,6 +208,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <ScrollToTopButton />
     </Layout>
   );
 };

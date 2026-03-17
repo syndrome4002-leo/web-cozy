@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Counter from "@/components/Counter";
+import { ScrollToTopButton } from "@/components/ScrollToTop";
 import { 
   Shield, Zap, BarChart3, ArrowRight, Code2, Cloud, Database,
   Users, Rocket, CheckCircle, TrendingUp, Lock, Globe, Server,
   Cpu, Monitor, Star, Clock, Award
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import bg3 from "@/assets/bgs/3.jpg";
+import bg6 from "@/assets/bgs/6.jpg";
 import avatar1 from "@/assets/members/1.jpg";
 import avatar2 from "@/assets/members/2.png";
 import avatar3 from "@/assets/members/3.png";
@@ -220,8 +223,13 @@ const Index = () => (
     </section>
 
     {/* Technologies Section */}
-    <section className="section-padding bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative section-padding bg-background overflow-hidden">
+      <img
+        src={bg6}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-5 pointer-events-none"
+      />
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="mb-12">
           <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Technology Stack</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
@@ -243,8 +251,13 @@ const Index = () => (
     </section>
 
     {/* Case Studies */}
-    <section className="section-padding bg-section-dark">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative section-padding bg-section-dark overflow-hidden">
+      <img
+        src={bg3}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none"
+      />
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="mb-12">
           <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Success Stories</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-section-dark-foreground">
@@ -363,6 +376,7 @@ const Index = () => (
         </div>
       </div>
     </section>
+    <ScrollToTopButton />
   </Layout>
 );
 
