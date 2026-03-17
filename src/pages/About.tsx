@@ -19,30 +19,28 @@ const values = [
   { 
     icon: Target, 
     title: "Mission", 
-    desc: "To empower businesses of every size with innovative technology that drives efficiency, growth, and competitive advantage.",
-    details: "We believe technology should serve as a catalyst for business transformation, not just a tool."
+    desc: "To deliver reliable, straightforward IT support that businesses can depend on—keeping systems running smoothly without the hassle.",
+    details: ""
   },
   { 
     icon: Eye, 
     title: "Vision", 
-    desc: "To be the most trusted technology partner for forward-thinking organizations around the globe.",
-    details: "Building lasting partnerships that evolve with our clients' changing needs and industry trends."
+    desc: "To be the IT partner businesses trust—not just for support, but as a team they can rely on, know by name, and grow with.",
+    details: ""
   },
   { 
     icon: Users, 
     title: "Culture", 
-    desc: "Collaboration, continuous learning, and an unwavering commitment to delivering excellence define who we are.",
-    details: "Our team thrives on innovation, embraces challenges, and celebrates collective success."
+    desc: "We believe in honest communication, taking responsibility, and building real relationships—because great IT support starts with people.",
+    details: ""
   },
 ];
 
 const milestones = [
-  { year: "2015", title: "Company Founded", desc: "Started with 3 passionate engineers in a small Manchester office" },
-  { year: "2017", title: "First 50 Clients", desc: "Expanded to serve medium-sized businesses across the UK" },
-  { year: "2019", title: "ISO 27001 Certified", desc: "Achieved international security certification" },
-  { year: "2020", title: "50+ Team Members", desc: "Grew to become a leading IT solutions provider" },
-  { year: "2022", title: "Global Expansion", desc: "Opened international offices and partnerships" },
-  { year: "2024", title: "200+ Clients", desc: "Serving enterprises worldwide with comprehensive IT solutions" },
+  { year: "Years of Experience", title: "We've spent over two decades working in IT, supporting businesses of all sizes and solving real-world problems.", desc: "" },
+  { year: "Why We Started", title: "We saw too many companies getting poor, impersonal support—so we set out to change that.", desc: "" },
+  { year: "Building Something Different", title: "Creating an IT service that's approachable, reliable, and built around real relationships.", desc: "" },
+  { year: "Growing Together", title: "Working closely with our clients as a trusted partner, not just another provider.", desc: "" },
 ];
 
 const team = [
@@ -90,32 +88,32 @@ const certifications = [
 ];
 
 const stats = [
-  { value: "50+", label: "Expert Engineers", desc: "Certified professionals across multiple domains" },
-  { value: "200+", label: "Happy Clients", desc: "Satisfied businesses worldwide" },
-  { value: "99.9%", label: "Uptime SLA", desc: "Reliable service delivery" },
-  { value: "24/7", label: "Support", desc: "Round-the-clock assistance" },
+  { value: "Built on Trust", label: "Long-Term Partnerships", desc: "We focus on relationships, not just quick fixes" },
+  { value: "Experienced Team", label: "20+ Years Combined", desc: "Hands-on knowledge across all areas of IT" },
+  { value: "Dependable Service", label: "Consistency You Can Rely On", desc: "Keeping your business running smoothly" },
+  { value: "Here When You Need Us", label: "Responsive & Approachable", desc: "Support from people who actually know you" },
 ];
 
 const culture = [
   {
     icon: Heart,
     title: "People First",
-    desc: "We invest in our team's growth and well-being, creating an environment where everyone can thrive."
+    desc: "You'll always deal with real people who know your business—not a helpdesk or a ticket number."
   },
   {
     icon: Zap,
-    title: "Innovation Driven",
-    desc: "We stay ahead of technology trends and continuously explore new ways to solve problems."
+    title: "Straightforward Approach",
+    desc: "No jargon, no overcomplication—just clear, honest advice and IT support that makes sense."
   },
   {
     icon: UsersIcon,
-    title: "Collaborative Spirit",
-    desc: "Cross-functional teams work together seamlessly to deliver exceptional results."
+    title: "Reliable Support",
+    desc: "When you need us, we're there—ready to help, fix issues, and keep your business running."
   },
   {
     icon: Award,
-    title: "Excellence Focused",
-    desc: "We maintain the highest standards in everything we do, from code quality to client service."
+    title: "Built on Trust",
+    desc: "We focus on long-term relationships, being a team you can rely on and grow with."
   },
 ];
 
@@ -171,17 +169,20 @@ const About = () => (
           <div>
             <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Our Story</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-              From Startup to <span className="gradient-text">Industry Leader</span>
+              Built on Experience. <span className="gradient-text">Driven by People.</span>
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Pulsar IT was born from a simple belief: that every business deserves access to world-class technology solutions, regardless of size or industry. What started as three engineers in a Manchester co-working space has evolved into a comprehensive IT services company.
+                We’re two IT professionals with over 20 years of combined experience, brought together by a shared belief—IT support should be reliable, straightforward, and genuinely personal.
               </p>
               <p>
-                Over the years, we've helped hundreds of businesses navigate the complex world of digital transformation. From securing sensitive data to building scalable cloud infrastructures, we've been there every step of the way.
+                After years of working in the industry, we saw the same problem time and time again: businesses being treated like ticket numbers instead of people. So we decided to do things differently.
               </p>
               <p>
-                Today, we continue to push boundaries, embracing emerging technologies like AI, blockchain, and advanced analytics to deliver solutions that not only meet today's needs but anticipate tomorrow's challenges.
+                What started as a simple idea has grown into a service built on trust, relationships, and real accountability. We don’t just fix problems—we work alongside you, understanding your business and providing the support you can rely on every day.
+              </p>
+              <p>
+                Whether it’s keeping your systems secure, moving you to the cloud, or just being there when something goes wrong, we’re the team you know, trust, and can always reach.
               </p>
             </div>
           </div>
@@ -214,7 +215,7 @@ const About = () => (
         <div className="mb-12 text-center">
           <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Our Journey</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-section-dark-foreground">
-            Milestones & <span className="gradient-text">Growth</span>
+            Journey
           </h2>
         </div>
         <div className="relative max-w-6xl mx-auto">
@@ -234,20 +235,20 @@ const About = () => (
                     <div className="relative bg-gradient-to-br from-section-dark-foreground/10 to-primary/10 rounded-2xl p-8 border border-section-dark-foreground/20 hover:border-primary/40 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 backdrop-blur-sm">
                       {/* Year badge */}
                       <div className="absolute -top-4 left-6 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                        {milestone.year}
+                        {index + 1}
                       </div>
 
                       {/* Icon */}
                       <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">
-                        <span className="text-primary font-bold text-lg">{milestone.year.slice(-1)}</span>
+                        <span className="text-primary font-bold text-lg">{index + 1}</span>
                       </div>
 
                       {/* Content */}
                       <h3 className="font-heading text-xl font-bold text-section-dark-foreground mb-3 group-hover:text-primary transition-colors">
-                        {milestone.title}
+                        {milestone.year}
                       </h3>
                       <p className="text-section-dark-foreground/80 leading-relaxed text-sm">
-                        {milestone.desc}
+                        {milestone.title}
                       </p>
 
                       {/* Decorative elements */}
