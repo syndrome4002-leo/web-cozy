@@ -17,61 +17,61 @@ import avatar3 from "@/assets/members/3.png";
 const stats = [
   { value: "200+", label: "Clients Served" },
   { value: "99.9%", label: "Uptime SLA" },
-  { value: "50+", label: "Expert Engineers" },
-  { value: "10+", label: "Years Experience" },
+  { value: "10", label: "Expert Engineers" },
+  { value: "20+", label: "Years Experience" },
 ];
 
 const services = [
   {
+    icon: Users,
+    title: "Managed Support",
+    desc: "Choose how you want to work with us – full outsourcing or supplementing your in-house team for the best possible outcomes.",
+  },
+  {
     icon: Shield,
     title: "Cybersecurity Solutions",
-    desc: "Enterprise-grade protection for your digital assets and infrastructure with advanced threat detection and response.",
+    desc: "Advanced cybersecurity solutions designed to defend your digital infrastructure with real-time threat detection and proactive response.",
   },
   {
     icon: Cloud,
     title: "Cloud Infrastructure",
-    desc: "Scalable cloud architecture designed for performance, reliability, and cost optimization.",
-  },
-  {
-    icon: BarChart3,
-    title: "Data Analytics",
-    desc: "Turn raw data into actionable insights that drive business growth and competitive advantage.",
-  },
-  {
-    icon: Code2,
-    title: "Custom Development",
-    desc: "Bespoke software solutions tailored to your unique business requirements and challenges.",
+    desc: "End-to-end cloud infrastructure services, from on-premise to cloud migrations to Microsoft 365 deployment and fully managed hosted environments.",
   },
   {
     icon: Database,
-    title: "Database Management",
-    desc: "Robust database solutions with backup, recovery, and optimization strategies.",
+    title: "Backup & Disaster Recovery",
+    desc: "Reliable backup solutions tailored to your business, ensuring your data is secure, recoverable, and always protected.",
   },
   {
-    icon: Users,
-    title: "IT Consulting",
-    desc: "Strategic technology guidance to align IT investments with your business objectives.",
+    icon: Lock,
+    title: "IT Compliance",
+    desc: "IT compliance made simple—supporting Cyber Essentials, ISO standards, and keeping your business secure and audit-ready.",
+  },
+  {
+    icon: Code2,
+    title: "Professional Services",
+    desc: "Expert IT consultancy and professional services designed to optimise performance, efficiency, and growth.",
   },
 ];
 
 const caseStudies = [
   {
-    title: "Digital Transformation for Fortune 500",
-    category: "Enterprise Solution",
+    title: "Enterprise Cloud Migration",
+    category: "Cloud Infrastructure",
     result: "40% cost reduction",
-    desc: "Migrated legacy systems to modern cloud infrastructure, improving operational efficiency.",
+    desc: "Migrated on-premise infrastructure to fully managed cloud environment with Microsoft 365 deployment.",
   },
   {
-    title: "E-commerce Platform Scaling",
-    category: "Development",
-    result: "10x performance increase",
-    desc: "Built high-performance platform handling 1M+ daily transactions with zero downtime.",
-  },
-  {
-    title: "Security Infrastructure Overhaul",
+    title: "Cybersecurity Infrastructure Overhaul",
     category: "Cybersecurity",
     result: "99.99% threat prevention",
-    desc: "Implemented zero-trust architecture protecting sensitive financial data.",
+    desc: "Implemented real-time threat detection and proactive response system with advanced analytics.",
+  },
+  {
+    title: "Business Continuity Assurance",
+    category: "Backup & Disaster Recovery",
+    result: "Zero data loss",
+    desc: "Designed and implemented customized backup solutions ensuring assured data recovery.",
   },
 ];
 
@@ -97,21 +97,17 @@ const testimonials = [
 ];
 
 const features = [
-  { icon: Rocket, title: "Fast Deployment", desc: "Rapid implementation with minimal business disruption" },
-  { icon: Lock, title: "Enterprise Security", desc: "Multi-layer security compliance with ISO 27001 certification" },
-  { icon: TrendingUp, title: "Scalable Solutions", desc: "Grow your infrastructure as your business scales" },
-  { icon: Users, title: "24/7 Support", desc: "Dedicated team available round-the-clock for assistance" },
-  { icon: Award, title: "Industry Certified", desc: "AWS, Azure, and Google Cloud certified professionals" },
-  { icon: Clock, title: "On-time Delivery", desc: "99% on-schedule project completion rate" },
+  { icon: Lock, title: "Enterprise Security", desc: "Enterprise-grade security with multi-layered protection to safeguard your business." },
+  { icon: Award, title: "Industry Certified", desc: "AWS, Azure, Microsoft and Fortigate Certified professionals." },
 ];
 
 const technologies = [
-  { icon: Cloud, name: "Cloud Computing" },
-  { icon: Cpu, name: "AI & Machine Learning" },
-  { icon: Database, name: "Big Data" },
-  { icon: Monitor, name: "DevOps" },
-  { icon: Server, name: "Microservices" },
-  { icon: Lock, name: "Blockchain" },
+  { icon: Cloud, name: "Cloud & Hosting" },
+  { icon: Lock, name: "Security & Compliance" },
+  { icon: Database, name: "Backup & Recovery" },
+  { icon: Monitor, name: "Microsoft 365" },
+  { icon: Server, name: "IT Infrastructure" },
+  { icon: Users, name: "Support & Monitoring" },
 ];
 
 const Index = () => (
@@ -134,6 +130,7 @@ const Index = () => (
         </h1>
         <p className="text-hero-foreground/70 text-lg md:text-xl max-w-xl mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
           We deliver innovative technology solutions that transform enterprises, streamline operations, and accelerate growth through strategic IT partnerships.
+          We’re more than just an IT provider—we’re a partner you can rely on, delivering smart, dependable solutions that help your business succeed.
         </p>
         <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <Link
@@ -233,10 +230,10 @@ const Index = () => (
         <div className="mb-12">
           <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Technology Stack</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-            Cutting-Edge <span className="gradient-text">Technologies</span>
+            IT Services Built <span className="gradient-text">for Business</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mt-4">
-            We leverage the latest technologies and frameworks to deliver solutions that stay ahead of industry trends.
+            Reliable, secure, and fully managed IT solutions designed to support your day-to-day operations and future growth.
           </p>
         </div>
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">

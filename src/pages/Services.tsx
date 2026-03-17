@@ -11,81 +11,81 @@ import bg4 from "@/assets/bgs/4.jpg";
 
 const services = [
   {
+    icon: Users,
+    title: "Managed Support",
+    desc: "Choose how you want to work with us – full outsourcing or supplementing your in-house team for the best possible outcomes.",
+    features: [
+      "Full Outsourcing Options",
+      "Team Augmentation",
+      "Technology Insight",
+      "Business Outcome Focus",
+      "Flexible Engagement Models",
+      "Strategic Partnership"
+    ]
+  },
+  {
     icon: Shield,
     title: "Cybersecurity Solutions",
-    desc: "Comprehensive threat detection, penetration testing, and security compliance to protect your business from evolving cyber threats.",
+    desc: "Advanced cybersecurity solutions designed to defend your digital infrastructure with real-time threat detection and proactive response.",
     features: [
-      "Threat Detection & Response",
-      "Penetration Testing",
-      "Security Compliance (ISO 27001)",
-      "Data Encryption",
-      "Access Management",
-      "Security Audits"
+      "Real-time Threat Detection",
+      "Proactive Response",
+      "Digital Infrastructure Defense",
+      "Advanced Threat Protection",
+      "Security Monitoring",
+      "Incident Response"
     ]
   },
   {
     icon: Cloud,
     title: "Cloud Infrastructure",
-    desc: "Design, migrate, and manage scalable cloud environments on AWS, Azure, and GCP with 99.9% uptime guaranteed.",
+    desc: "End-to-end cloud infrastructure services, from on-premise to cloud migrations to Microsoft 365 deployment and fully managed hosted environments.",
     features: [
       "Cloud Migration",
-      "Infrastructure Design",
-      "Cost Optimization",
+      "Microsoft 365 Deployment",
+      "On-premise Solutions",
+      "Managed Hosted Environments",
       "Multi-cloud Management",
-      "Disaster Recovery",
-      "Auto-scaling Solutions"
+      "Infrastructure Optimization"
     ]
   },
   {
-    icon: BarChart3,
-    title: "Data & Analytics",
-    desc: "Unlock business intelligence through advanced data pipelines, warehousing, and real-time analytics dashboards.",
+    icon: Database,
+    title: "Backup & Disaster Recovery",
+    desc: "Reliable backup solutions tailored to your business, ensuring your data is secure, recoverable, and always protected.",
     features: [
-      "Data Warehousing",
-      "Analytics Dashboards",
-      "Real-time Processing",
-      "ML Models",
-      "Data Visualization",
-      "Business Intelligence"
+      "Customized Backup Solutions",
+      "Disaster Recovery Planning",
+      "Data Security",
+      "Recovery Assurance",
+      "Business Continuity",
+      "Regular Testing & Validation"
+    ]
+  },
+  {
+    icon: Lock,
+    title: "IT Compliance",
+    desc: "IT compliance made simple—supporting Cyber Essentials, ISO standards, and keeping your business secure and audit-ready.",
+    features: [
+      "Cyber Essentials Support",
+      "ISO Standards Compliance",
+      "Audit Readiness",
+      "Security Standards",
+      "Compliance Management",
+      "Regular Assessments"
     ]
   },
   {
     icon: Code,
-    title: "Custom Software Development",
-    desc: "End-to-end software development from web and mobile applications to enterprise systems tailored to your needs.",
+    title: "Professional Services",
+    desc: "Expert IT consultancy and professional services designed to optimise performance, efficiency, and growth.",
     features: [
-      "Web Development",
-      "Mobile Apps",
-      "API Development",
-      "Legacy Modernization",
-      "Agile Methodology",
-      "DevOps Integration"
-    ]
-  },
-  {
-    icon: Server,
-    title: "IT Infrastructure",
-    desc: "Network design, server management, and hardware procurement to build a rock-solid technology foundation.",
-    features: [
-      "Network Design",
-      "Server Management",
-      "Hardware Procurement",
-      "Virtualization",
-      "Load Balancing",
-      "Backup Solutions"
-    ]
-  },
-  {
-    icon: Headphones,
-    title: "Managed IT Support",
-    desc: "24/7 helpdesk, proactive monitoring, and on-site support to keep your operations running without interruption.",
-    features: [
-      "24/7 Helpdesk",
-      "Proactive Monitoring",
-      "Incident Management",
-      "On-site Support",
+      "IT Consultancy",
       "Performance Optimization",
-      "User Training"
+      "Efficiency Improvement",
+      "Growth Enablement",
+      "Strategic Planning",
+      "Expert Guidance"
     ]
   },
 ];
@@ -94,34 +94,34 @@ const serviceDetails = [
   {
     title: "Cybersecurity Solutions",
     icon: Shield,
-    overview: "Protect your business with enterprise-grade security",
+    overview: "Advanced defense with real-time threat detection",
     benefits: [
-      "99.99% threat prevention rate",
-      "24/7 security monitoring and response",
-      "Compliance with international standards",
-      "Regular security audits and updates"
+      "Real-time threat detection and response",
+      "Digital infrastructure protection",
+      "Proactive security measures",
+      "Advanced threat analytics"
     ]
   },
   {
     title: "Cloud Infrastructure",
     icon: Cloud,
-    overview: "Scale your operations with reliable cloud platforms",
+    overview: "End-to-end cloud services with full migration support",
     benefits: [
-      "99.9% uptime SLA",
-      "Automatic backup and recovery",
-      "Global data centers",
-      "Cost-effective scaling"
+      "Seamless cloud migrations",
+      "Microsoft 365 deployment",
+      "Fully managed hosted environments",
+      "Multi-cloud capabilities"
     ]
   },
   {
-    title: "Data & Analytics",
-    icon: BarChart3,
-    overview: "Transform data into actionable business insights",
+    title: "Backup & Disaster Recovery",
+    icon: Database,
+    overview: "Secure and recoverable data protection solutions",
     benefits: [
-      "Real-time analytics dashboards",
-      "Predictive modeling capabilities",
-      "Integration with existing systems",
-      "Custom reporting solutions"
+      "Customized backup strategies",
+      "Assured data recovery",
+      "Business continuity planning",
+      "Regular testing and validation"
     ]
   }
 ];
@@ -151,34 +151,14 @@ const processSteps = [
 
 const whyChoose = [
   {
-    icon: Award,
-    title: "Expert Team",
-    desc: "50+ certified professionals with industry expertise"
-  },
-  {
-    icon: Zap,
-    title: "Fast Delivery",
-    desc: "Rapid implementation with minimal business disruption"
-  },
-  {
     icon: Lock,
-    title: "Security First",
-    desc: "Enterprise-grade security in every solution"
+    title: "Enterprise Security",
+    desc: "Enterprise-grade security with multi-layered protection to safeguard your business."
   },
   {
-    icon: TrendingUp,
-    title: "Proven Results",
-    desc: "40% average cost reduction for our clients"
-  },
-  {
-    icon: Clock,
-    title: "24/7 Support",
-    desc: "Round-the-clock support and monitoring"
-  },
-  {
-    icon: Users,
-    title: "Scalable Solutions",
-    desc: "Grows with your business needs"
+    icon: Award,
+    title: "Industry Certified",
+    desc: "AWS, Azure, Microsoft and Fortigate Certified professionals."
   }
 ];
 
@@ -232,9 +212,6 @@ const Services = () => (
                   </li>
                 ))}
               </ul>
-              <Link to="/contact" className="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-5 hover:gap-2 transition-all">
-                Learn More <ArrowRight size={14} />
-              </Link>
             </div>
           ))}
         </div>
@@ -341,24 +318,22 @@ const Services = () => (
       />
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="mb-12">
-          <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Technologies We Use</p>
+          <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Technology Stack</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-section-dark-foreground">
-            Modern <span className="gradient-text">Tech Stack</span>
+            IT Services Built <span className="gradient-text">for Business</span>
           </h2>
           <p className="text-section-dark-foreground/60 text-lg max-w-2xl mt-4">
-            We leverage cutting-edge technologies and industry best practices to deliver optimal solutions.
+            Reliable, secure, and fully managed IT solutions designed to support your day-to-day operations and future growth.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: Cloud, name: "AWS, Azure, GCP" },
-            { icon: Database, name: "Databases" },
-            { icon: GitBranch, name: "DevOps & CI/CD" },
-            { icon: Cpu, name: "AI & Machine Learning" },
-            { icon: Monitor, name: "Monitoring Tools" },
-            { icon: Lock, name: "Security Tools" },
-            { icon: Code, name: "Frameworks" },
-            { icon: Users, name: "Collaboration" },
+            { icon: Cloud, name: "Cloud & Hosting" },
+            { icon: Lock, name: "Security & Compliance" },
+            { icon: Database, name: "Backup & Recovery" },
+            { icon: Monitor, name: "Microsoft 365" },
+            { icon: Server, name: "IT Infrastructure" },
+            { icon: Users, name: "Support & Monitoring" },
           ].map((tech) => (
             <div key={tech.name} className="rounded-lg p-6 bg-section-dark border border-section-dark-foreground/20 hover:border-primary/50 transition-colors text-center group">
               <tech.icon className="text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" size={32} />
