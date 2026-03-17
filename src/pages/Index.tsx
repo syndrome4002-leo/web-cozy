@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import Counter from "@/components/Counter";
 import { Shield, Zap, BarChart3, ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -71,7 +72,9 @@ const Index = () => (
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {stats.map((s) => (
           <div key={s.label}>
-            <p className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground">{s.value}</p>
+            <p className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground">
+              <Counter target={s.value} />
+            </p>
             <p className="text-primary-foreground/70 text-sm mt-1">{s.label}</p>
           </div>
         ))}

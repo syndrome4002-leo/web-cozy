@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-hero/90 backdrop-blur-md border-b border-border/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="font-heading text-2xl font-bold text-hero-foreground tracking-tight">
-          <span className="gradient-text">Nova</span>Tech
+          <span className="gradient-text">Pulsar</span> IT
         </Link>
 
         {/* Desktop */}

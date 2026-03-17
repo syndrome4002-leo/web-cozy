@@ -20,7 +20,7 @@ const About = () => (
     <section className="bg-hero section-padding pb-12">
       <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Who We Are</p>
       <h1 className="font-heading text-4xl md:text-5xl font-bold text-hero-foreground mb-4">
-        About <span className="gradient-text">NovaTech</span>
+        About <span className="gradient-text">Pulsar IT</span>
       </h1>
       <p className="text-hero-foreground/60 max-w-xl text-lg">
         Founded in 2015, we've grown from a small startup to a team of 50+ engineers serving 200+ clients worldwide.
@@ -75,7 +75,7 @@ const About = () => (
         </p>
         <div className="glass-card p-8 text-left max-w-md mx-auto bg-section-dark/80">
           <div className="space-y-4 text-section-dark-foreground/80 text-sm">
-            <p><span className="font-semibold text-section-dark-foreground">Email:</span> hello@novatech.io</p>
+            <p><span className="font-semibold text-section-dark-foreground">Email:</span> hello@pulsarit.com</p>
             <p><span className="font-semibold text-section-dark-foreground">Phone:</span> +1 (555) 987-6543</p>
             <p><span className="font-semibold text-section-dark-foreground">Address:</span> 123 Innovation Drive, San Francisco, CA 94105</p>
           </div>

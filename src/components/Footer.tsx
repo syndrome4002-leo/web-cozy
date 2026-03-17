@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
       <div>
         <h3 className="font-heading text-xl font-bold text-hero-foreground mb-3">
-          <span className="gradient-text">Nova</span>Tech
+          <span className="gradient-text">Pulsar</span>IT
         </h3>
         <p className="text-sm leading-relaxed max-w-xs">
           Empowering businesses with cutting-edge technology solutions since 2015.
@@ -22,14 +22,14 @@ const Footer = () => (
       <div>
         <h4 className="font-heading font-semibold text-hero-foreground mb-3">Contact</h4>
         <ul className="space-y-2 text-sm">
-          <li>hello@novatech.io</li>
+          <li>hello@pulsarit.com</li>
           <li>+1 (555) 987-6543</li>
           <li>San Francisco, CA</li>
         </ul>
       </div>
     </div>
     <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-border/10 text-center text-xs">
-      © {new Date().getFullYear()} NovaTech. All rights reserved.
+      © {new Date().getFullYear()} Pulsar IT. All rights reserved.
     </div>
   </footer>
 );
