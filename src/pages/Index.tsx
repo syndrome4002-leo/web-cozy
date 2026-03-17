@@ -99,6 +99,10 @@ const testimonials = [
 const features = [
   { icon: Lock, title: "Enterprise Security", desc: "Enterprise-grade security with multi-layered protection to safeguard your business." },
   { icon: Award, title: "Industry Certified", desc: "AWS, Azure, Microsoft and Fortigate Certified professionals." },
+  { icon: Rocket, title: "Fast Deployment", desc: "Rapid implementation with minimal business disruption" },
+  { icon: Users, title: "24/7 Support", desc: "Dedicated team available round-the-clock for assistance" },
+  { icon: TrendingUp, title: "Scalable Solutions", desc: "Grow your infrastructure as your business scales" },
+  { icon: Clock, title: "On-time Delivery", desc: "99% on-schedule project completion rate" },
 ];
 
 const technologies = [

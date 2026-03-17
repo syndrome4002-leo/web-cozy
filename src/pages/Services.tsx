@@ -159,6 +159,26 @@ const whyChoose = [
     icon: Award,
     title: "Industry Certified",
     desc: "AWS, Azure, Microsoft and Fortigate Certified professionals."
+  },
+  {
+    icon: Zap,
+    title: "Fast Deployment",
+    desc: "Rapid implementation with minimal business disruption"
+  },
+  {
+    icon: Users,
+    title: "24/7 Support",
+    desc: "Round-the-clock support and monitoring"
+  },
+  {
+    icon: TrendingUp,
+    title: "Scalable Solutions",
+    desc: "Grow your infrastructure as your business scales"
+  },
+  {
+    icon: Clock,
+    title: "On-time Delivery",
+    desc: "Reliable and consistent delivery on schedule"
   }
 ];
 
