@@ -14,6 +14,7 @@ import avatar5 from "@/assets/members/5.png";
 import bg2 from "@/assets/bgs/2.jpg";
 import bg5 from "@/assets/bgs/5.png";
 import bg8 from "@/assets/bgs/8.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const values = [
   { 
@@ -186,18 +187,25 @@ const About = () => (
               </p>
             </div>
           </div>
-          <div className="glass-card p-8">
-            <h3 className="font-heading text-xl font-semibold text-foreground mb-6">Key Achievements</h3>
-            <div className="space-y-4">
-              {stats.map((stat) => (
-                <div key={stat.label} className="flex items-center justify-between p-4 rounded-lg bg-primary/5">
-                  <div>
-                    <p className="font-heading text-2xl font-bold text-primary">{stat.value}</p>
-                    <p className="text-foreground font-semibold">{stat.label}</p>
+          <div className="relative glass-card p-8 overflow-hidden">
+            <img
+              src={heroBg}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none"
+            />
+            <div className="relative z-10">
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-6">Key Achievements</h3>
+              <div className="space-y-4">
+                {stats.map((stat) => (
+                  <div key={stat.label} className="flex items-center justify-between p-4 rounded-lg bg-primary/5">
+                    <div>
+                      <p className="font-heading text-2xl font-bold text-primary">{stat.value}</p>
+                      <p className="text-foreground font-semibold">{stat.label}</p>
+                    </div>
+                    <p className="text-muted-foreground text-sm max-w-xs">{stat.desc}</p>
                   </div>
-                  <p className="text-muted-foreground text-sm max-w-xs">{stat.desc}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
