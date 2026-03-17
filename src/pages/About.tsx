@@ -1,5 +1,9 @@
 import Layout from "@/components/Layout";
 import { Target, Eye, Users } from "lucide-react";
+import avatar1 from "@/assets/members/1.jpg";
+import avatar2 from "@/assets/members/2.png";
+import avatar3 from "@/assets/members/3.png";
+import avatar4 from "@/assets/members/4.png";
 
 const values = [
   { icon: Target, title: "Mission", desc: "To empower businesses of every size with innovative technology that drives efficiency, growth, and competitive advantage." },
@@ -8,10 +12,10 @@ const values = [
 ];
 
 const team = [
-  { name: "Sarah Chen", role: "CEO & Founder" },
-  { name: "Marcus Rivera", role: "CTO" },
-  { name: "Aisha Patel", role: "VP of Engineering" },
-  { name: "James Okoye", role: "Head of Security" },
+  { name: "Sarah Chen", role: "CEO & Founder", image: avatar1 },
+  { name: "Marcus Rivera", role: "CTO", image: avatar2 },
+  { name: "Aisha Patel", role: "VP of Engineering", image: avatar3 },
+  { name: "James Okoye", role: "Head of Security", image: avatar4 },
 ];
 
 const About = () => (
@@ -51,11 +55,11 @@ const About = () => (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {team.map((t) => (
             <div key={t.name} className="glass-card p-6 text-center">
-              <div className="w-20 h-20 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
-                <span className="font-heading text-2xl font-bold text-primary">
-                  {t.name.split(" ").map(n => n[0]).join("")}
-                </span>
-              </div>
+              <img 
+                src={t.image} 
+                alt={t.name}
+                className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
+              />
               <h4 className="font-heading font-semibold text-foreground">{t.name}</h4>
               <p className="text-muted-foreground text-sm">{t.role}</p>
             </div>
