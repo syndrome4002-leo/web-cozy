@@ -2,14 +2,9 @@ import Layout from "@/components/Layout";
 import { ScrollToTopButton } from "@/components/ScrollToTop";
 import { Mail, Phone, MapPin, Send, Clock, Globe } from "lucide-react";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import bg7 from "@/assets/bgs/7.jpg";
 
-// Initialize EmailJS (replace with your public key)
-emailjs.init("1nPkxqkijPLRyoSZK"); //public key
-
-// const COMPANY_EMAIL = "hello@pulsarit.co.uk";
-const COMPANY_EMAIL = "syndrome4002@gmail.com";
+const COMPANY_EMAIL = "hello@pulsarit.co.uk";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,25 +25,30 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Send email to company without template
-      await emailjs.send(
-        "service_2t7hpsq", //service id
-        "template_4qksv24", // Replace with your actual template ID from EmailJS
-        {
-          to_email: COMPANY_EMAIL,
-          from_name: formData.name,
-          from_email: formData.email,
+      const response = await fetch("https://formsubmit.co/ajax/" + COMPANY_EMAIL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          reply_to: formData.email,
-        }
-      );
+          _captcha: false,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
 
       setFormData({ name: "", email: "", subject: "", message: "" });
       alert("Thank you for your message! We'll get back to you soon.");
     } catch (error) {
       console.error("Failed to send email:", error);
-      alert("Failed to send message. Please try again or email us directly at hello@pulsarit.co.uk");
+      alert("Failed to send message. Please try again or email us directly at " + COMPANY_EMAIL);
     } finally {
       setIsSubmitting(false);
     }
