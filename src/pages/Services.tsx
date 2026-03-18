@@ -1,11 +1,11 @@
 import Layout from "@/components/Layout";
 import { ScrollToTopButton } from "@/components/ScrollToTop";
+import { Link } from "react-router-dom";
 import { 
   Shield, Cloud, BarChart3, Code, Server, Headphones, 
   Check, ArrowRight, Lock, Zap, TrendingUp, Users,
   Database, Monitor, GitBranch, Cpu, Clock, Award
 } from "lucide-react";
-import { Link } from "react-router-dom";
 import bg1 from "@/assets/bgs/1.jpg";
 import bg4 from "@/assets/bgs/4.jpg";
 
@@ -418,6 +418,12 @@ const Services = () => (
                   </li>
                 ))}
               </ul>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+              >
+                Contact Our Team <ArrowRight size={16} />
+              </Link>
             </div>
           ))}
         </div>
