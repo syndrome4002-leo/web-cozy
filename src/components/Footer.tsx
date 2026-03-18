@@ -26,9 +26,9 @@ const Footer = () => (
       <div>
         <h4 className="font-heading font-semibold text-hero-foreground mb-3">Contact Us</h4>
         <ul className="space-y-2 text-sm">
-          <li>hello@pulsarit.com</li>
-          <li>+44 (161) 234-5678</li>
-          <li>Manchester, UK</li>
+          <li>hello@pulsarit.co.uk</li>
+          <li>+44 7512709700</li>
+          <li>Bartle House, Oxford Court, Manchester, M2 3WQ</li>
         </ul>
       </div>
     </div>

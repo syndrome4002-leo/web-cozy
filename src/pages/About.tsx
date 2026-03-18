@@ -406,59 +406,6 @@ const About = () => (
             ))}
           </div>
         </div>
-
-        {/* Other Team Members Section */}
-        <div>
-          <h3 className="text-primary font-semibold text-sm tracking-widest uppercase mb-8 text-center">Executive Team</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.filter(t => t.role !== "Director").map((t) => (
-              <div key={t.name} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-section-dark-foreground/5 to-primary/5 border border-section-dark-foreground/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-                {/* Background gradient on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                <div className="relative p-8">
-                  {/* Profile image with enhanced styling */}
-                  <div className="relative mb-6">
-                    <div className="w-28 h-28 rounded-full mx-auto overflow-hidden ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
-                      <img
-                        src={t.image}
-                        alt={t.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-                      <span className="text-primary-foreground text-xs font-bold">
-                        {t.name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="text-center">
-                    <h4 className="font-heading text-xl font-bold text-section-dark-foreground mb-2 group-hover:text-primary transition-colors">
-                      {t.name}
-                    </h4>
-                    <p className="text-primary font-semibold text-sm mb-4 bg-primary/10 px-3 py-1 rounded-full inline-block">
-                      {t.role}
-                    </p>
-                    <p className="text-section-dark-foreground/70 text-sm leading-relaxed mb-6">
-                      {t.bio}
-                    </p>
-
-                    {/* Expertise tags */}
-                    <div className="flex flex-wrap justify-center gap-2">
-                      {t.expertise.map((skill) => (
-                        <span key={skill} className="bg-primary/15 text-primary text-xs px-3 py-1 rounded-full border border-primary/20 hover:bg-primary/25 transition-colors">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
 
@@ -651,9 +598,9 @@ const About = () => (
         <div className="glass-card p-8 text-left max-w-md mx-auto bg-section-dark/80">
           <h3 className="font-heading font-semibold text-section-dark-foreground mb-4">Contact Information</h3>
           <div className="space-y-4 text-section-dark-foreground/80 text-sm">
-            <p><span className="font-semibold text-section-dark-foreground">Email:</span> hello@pulsarit.com</p>
-            <p><span className="font-semibold text-section-dark-foreground">Phone:</span> +44 (161) 234-5678</p>
-            <p><span className="font-semibold text-section-dark-foreground">Address:</span> 42 Deansgate, Manchester, M3 2BA, UK</p>
+            <p><span className="font-semibold text-section-dark-foreground">Email:</span> hello@pulsarit.co.uk</p>
+            <p><span className="font-semibold text-section-dark-foreground">Phone:</span> +44 7512709700</p>
+            <p><span className="font-semibold text-section-dark-foreground">Address:</span> Bartle House, Oxford Court, Manchester, M2 3WQ</p>
             <p><span className="font-semibold text-section-dark-foreground">Hours:</span> Monday-Friday, 9AM-6PM GMT</p>
           </div>
         </div>
