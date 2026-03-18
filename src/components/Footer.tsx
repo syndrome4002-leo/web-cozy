@@ -5,7 +5,12 @@ const Footer = () => (
   <footer className="bg-hero text-hero-foreground/70 section-padding py-12">
     <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
       <div>
-        <img src={logo} alt="Pulsar IT Logo" className="h-12 w-auto mb-3" />
+        <div className="flex items-center gap-2 mb-3">
+          <img src={logo} alt="Pulsar IT Logo" className="h-12 w-auto rounded-md" />
+          <h3 className="font-heading text-lg font-bold text-hero-foreground">
+            <span className="gradient-text">Pulsar</span> IT
+          </h3>
+        </div>
         <p className="text-sm leading-relaxed max-w-xs">
           Empowering businesses with cutting-edge technology solutions since 2015.
         </p>
