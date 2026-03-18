@@ -2,7 +2,14 @@ import Layout from "@/components/Layout";
 import { ScrollToTopButton } from "@/components/ScrollToTop";
 import { Mail, Phone, MapPin, Send, Clock, Globe } from "lucide-react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import bg7 from "@/assets/bgs/7.jpg";
+
+// Initialize EmailJS (replace with your public key)
+emailjs.init("1nPkxqkijPLRyoSZK"); //public key
+
+// const COMPANY_EMAIL = "hello@pulsarit.co.uk";
+const COMPANY_EMAIL = "syndrome4002@gmail.com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,17 +18,40 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    alert("Thank you for your message! We'll get back to you soon.");
+    setIsSubmitting(true);
+
+    try {
+      // Send email to company without template
+      await emailjs.send(
+        "service_2t7hpsq", //service id
+        "template_4qksv24", // Replace with your actual template ID from EmailJS
+        {
+          to_email: COMPANY_EMAIL,
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          reply_to: formData.email,
+        }
+      );
+
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      alert("Thank you for your message! We'll get back to you soon.");
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send message. Please try again or email us directly at hello@pulsarit.co.uk");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -135,9 +165,10 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                disabled={isSubmitting}
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message <Send size={18} />
+                {isSubmitting ? "Sending..." : "Send Message"} <Send size={18} />
               </button>
             </form>
           </div>
