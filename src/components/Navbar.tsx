@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -16,8 +17,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-hero/90 backdrop-blur-md border-b border-border/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link to="/" className="font-heading text-2xl font-bold text-hero-foreground tracking-tight">
-          <span className="gradient-text">Pulsar</span> IT
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Pulsar IT Logo" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop */}

@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-hero text-hero-foreground/70 section-padding py-12">
     <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
       <div>
-        <h3 className="font-heading text-xl font-bold text-hero-foreground mb-3">
-          <span className="gradient-text">Pulsar</span>IT
-        </h3>
+        <img src={logo} alt="Pulsar IT Logo" className="h-12 w-auto mb-3" />
         <p className="text-sm leading-relaxed max-w-xs">
           Empowering businesses with cutting-edge technology solutions since 2015.
         </p>
