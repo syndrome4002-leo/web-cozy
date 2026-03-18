@@ -15,7 +15,7 @@ import avatar2 from "@/assets/members/2.png";
 import avatar3 from "@/assets/members/3.png";
 
 const stats = [
-  { value: "200+", label: "Clients Served" },
+  { value: "50+", label: "Clients Served" },
   { value: "99.9%", label: "Uptime SLA" },
   { value: "10", label: "Expert Engineers" },
   { value: "20+", label: "Years Experience" },
