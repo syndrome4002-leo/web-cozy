@@ -14,7 +14,7 @@ import avatar5 from "@/assets/members/5.png";
 import bg2 from "@/assets/bgs/2.jpg";
 import bg5 from "@/assets/bgs/5.png";
 import bg8 from "@/assets/bgs/8.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.png";
 
 const values = [
   { 
@@ -75,6 +75,22 @@ const team = [
     image: avatar4,
     bio: "Cybersecurity expert with CISSP certification. Ensures our clients' data and systems remain protected against evolving threats.",
     expertise: ["Cybersecurity", "Risk Assessment", "Compliance"],
+    linkedin: "#"
+  },
+  { 
+    name: "Jack Healy", 
+    role: "Director", 
+    image: avatar1,
+    bio: "Jack Healy, Director, brings over a decade of hands-on experience in the IT sector. With a range of industry-recognised qualifications, he combines technical expertise with strategic insight to drive innovation and deliver high-quality results.",
+    expertise: ["IT Infrastructure", "Strategic Planning", "Technical Expertise"],
+    linkedin: "#"
+  },
+  { 
+    name: "Daniel Martin", 
+    role: "Director", 
+    image: avatar5,
+    bio: "Daniel Martin is a Director who brings both technical expertise and a people-first approach to IT. With a range of qualifications and real-world experience, he enjoys working closely with clients, making technology simple and helping businesses get the most out of their systems.",
+    expertise: ["Client Relations", "Technical Solutions", "Business Growth"],
     linkedin: "#"
   },
 ];
@@ -337,53 +353,111 @@ const About = () => (
             Our experienced leadership team brings decades of combined expertise in technology, business, and innovation.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {team.map((t) => (
-            <div key={t.name} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-section-dark-foreground/5 to-primary/5 border border-section-dark-foreground/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-              {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              <div className="relative p-8">
-                {/* Profile image with enhanced styling */}
-                <div className="relative mb-6">
-                  <div className="w-28 h-28 rounded-full mx-auto overflow-hidden ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
-                    <img
-                      src={t.image}
-                      alt={t.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground text-xs font-bold">
-                      {t.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                </div>
+        {/* Directors Section */}
+        <div className="mb-16">
+          <h3 className="text-primary font-semibold text-sm tracking-widest uppercase mb-8 text-center">Directors</h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {team.filter(t => t.role === "Director").map((t) => (
+              <div key={t.name} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 hover:border-primary/60 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20">
+                {/* Background gradient on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 opacity-100 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                {/* Content */}
-                <div className="text-center">
-                  <h4 className="font-heading text-xl font-bold text-section-dark-foreground mb-2 group-hover:text-primary transition-colors">
-                    {t.name}
-                  </h4>
-                  <p className="text-primary font-semibold text-sm mb-4 bg-primary/10 px-3 py-1 rounded-full inline-block">
-                    {t.role}
-                  </p>
-                  <p className="text-section-dark-foreground/70 text-sm leading-relaxed mb-6">
-                    {t.bio}
-                  </p>
-
-                  {/* Expertise tags */}
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {t.expertise.map((skill) => (
-                      <span key={skill} className="bg-primary/15 text-primary text-xs px-3 py-1 rounded-full border border-primary/20 hover:bg-primary/25 transition-colors">
-                        {skill}
+                <div className="relative p-8">
+                  {/* Profile image with enhanced styling */}
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 rounded-full mx-auto overflow-hidden ring-4 ring-primary/40 group-hover:ring-primary/60 transition-all duration-300">
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-primary rounded-full flex items-center justify-center ring-4 ring-section-dark">
+                      <span className="text-primary-foreground text-xs font-bold">
+                        {t.name.split(' ').map(n => n[0]).join('')}
                       </span>
-                    ))}
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="text-center">
+                    <h4 className="font-heading text-2xl font-bold text-section-dark-foreground mb-2 group-hover:text-primary transition-colors">
+                      {t.name}
+                    </h4>
+                    <p className="bg-primary px-4 py-2 rounded-full inline-block text-primary-foreground font-semibold text-sm mb-4">
+                      {t.role}
+                    </p>
+                    <p className="text-section-dark-foreground/80 text-base leading-relaxed mb-6">
+                      {t.bio}
+                    </p>
+
+                    {/* Expertise tags */}
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {t.expertise.map((skill) => (
+                        <span key={skill} className="bg-primary/25 text-primary-foreground text-xs px-3 py-1 rounded-full border border-primary/40">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        {/* Other Team Members Section */}
+        <div>
+          <h3 className="text-primary font-semibold text-sm tracking-widest uppercase mb-8 text-center">Executive Team</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {team.filter(t => t.role !== "Director").map((t) => (
+              <div key={t.name} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-section-dark-foreground/5 to-primary/5 border border-section-dark-foreground/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
+                {/* Background gradient on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                <div className="relative p-8">
+                  {/* Profile image with enhanced styling */}
+                  <div className="relative mb-6">
+                    <div className="w-28 h-28 rounded-full mx-auto overflow-hidden ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                      <span className="text-primary-foreground text-xs font-bold">
+                        {t.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="text-center">
+                    <h4 className="font-heading text-xl font-bold text-section-dark-foreground mb-2 group-hover:text-primary transition-colors">
+                      {t.name}
+                    </h4>
+                    <p className="text-primary font-semibold text-sm mb-4 bg-primary/10 px-3 py-1 rounded-full inline-block">
+                      {t.role}
+                    </p>
+                    <p className="text-section-dark-foreground/70 text-sm leading-relaxed mb-6">
+                      {t.bio}
+                    </p>
+
+                    {/* Expertise tags */}
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {t.expertise.map((skill) => (
+                        <span key={skill} className="bg-primary/15 text-primary text-xs px-3 py-1 rounded-full border border-primary/20 hover:bg-primary/25 transition-colors">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

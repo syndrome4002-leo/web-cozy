@@ -418,12 +418,6 @@ const Services = () => (
                   </li>
                 ))}
               </ul>
-              <Link
-                to="/contact"
-                className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
-              >
-                Get Started <ArrowRight size={16} />
-              </Link>
             </div>
           ))}
         </div>

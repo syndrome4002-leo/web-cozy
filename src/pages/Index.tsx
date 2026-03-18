@@ -7,7 +7,7 @@ import {
   Users, Rocket, CheckCircle, TrendingUp, Lock, Globe, Server,
   Cpu, Monitor, Star, Clock, Award
 } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.png";
 import bg3 from "@/assets/bgs/3.jpg";
 import bg6 from "@/assets/bgs/6.jpg";
 import avatar1 from "@/assets/members/1.jpg";
@@ -95,6 +95,7 @@ const testimonials = [
     image: avatar3
   },
 ];
+
 
 const features = [
   { icon: Lock, title: "Enterprise Security", desc: "Enterprise-grade security with multi-layered protection to safeguard your business." },
