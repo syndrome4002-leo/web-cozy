@@ -11,6 +11,8 @@ import avatar2 from "@/assets/members/2.png";
 import avatar3 from "@/assets/members/3.png";
 import avatar4 from "@/assets/members/4.png";
 import avatar5 from "@/assets/members/5.png";
+import jackAvatar from "@/assets/directors/jack.png";
+import danielAvatar from "@/assets/directors/daniel.png";
 import bg2 from "@/assets/bgs/2.jpg";
 import bg5 from "@/assets/bgs/5.png";
 import bg8 from "@/assets/bgs/8.jpg";
@@ -80,7 +82,7 @@ const team = [
   { 
     name: "Jack Healy", 
     role: "Director", 
-    image: avatar1,
+    image: jackAvatar,
     bio: "Jack Healy, Director, brings over a decade of hands-on experience in the IT sector. With a range of industry-recognised qualifications, he combines technical expertise with strategic insight to drive innovation and deliver high-quality results.",
     expertise: ["IT Infrastructure", "Strategic Planning", "Technical Expertise"],
     linkedin: "#"
@@ -88,7 +90,7 @@ const team = [
   { 
     name: "Daniel Martin", 
     role: "Director", 
-    image: avatar5,
+    image: danielAvatar,
     bio: "Daniel Martin is a Director who brings both technical expertise and a people-first approach to IT. With a range of qualifications and real-world experience, he enjoys working closely with clients, making technology simple and helping businesses get the most out of their systems.",
     expertise: ["Client Relations", "Technical Solutions", "Business Growth"],
     linkedin: "#"
