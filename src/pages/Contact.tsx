@@ -209,7 +209,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-section-dark-foreground mb-1">Expert Team</h3>
-                  <p className="text-section-dark-foreground/60 text-sm">50+ certified professionals ready to help</p>
+                  <p className="text-section-dark-foreground/60 text-sm">10 certified professionals ready to help</p>
                 </div>
               </div>
             </div>
