@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
             <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Email</h3>
             <p className="text-muted-foreground text-sm">Send us an email and we'll respond within 24 hours</p>
-            <p className="text-primary font-semibold mt-3">hello@pulsarit.com</p>
+            <p className="text-primary font-semibold mt-3">hello@pulsarit.co.uk</p>
           </div>
 
           <div className="glass-card p-8 text-center">
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
             <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Phone</h3>
             <p className="text-muted-foreground text-sm">Call us during business hours</p>
-            <p className="text-primary font-semibold mt-3">+44 (161) 234-5678</p>
+            <p className="text-primary font-semibold mt-3">+44 7512709700</p>
           </div>
 
           <div className="glass-card p-8 text-center">
@@ -64,7 +64,7 @@ const Contact = () => {
             </div>
             <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Location</h3>
             <p className="text-muted-foreground text-sm">Visit us at our office</p>
-            <p className="text-primary font-semibold mt-3">Manchester, UK</p>
+            <p className="text-primary font-semibold mt-3">Bartle House, Oxford Court, Manchester, M2 3WQ</p>
           </div>
         </div>
       </section>
@@ -195,19 +195,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="font-heading text-3xl font-bold text-foreground mb-8 text-center">Visit Our Office</h2>
-          <div className="rounded-xl overflow-hidden shadow-lg h-96 bg-muted flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="mx-auto mb-4 text-muted-foreground" size={48} />
-              <p className="text-muted-foreground text-lg">42 Deansgate, Manchester, M3 2BA, UK</p>
-              <p className="text-muted-foreground text-sm mt-2">Map integration available</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <ScrollToTopButton />
     </Layout>
   );
