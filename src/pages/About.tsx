@@ -172,7 +172,7 @@ const About = () => (
         About <span className="gradient-text">Pulsar IT</span>
       </h1>
       <p className="text-hero-foreground/60 max-w-xl text-lg">
-        Founded in 2015, we've grown from a small startup to a team of 50+ engineers serving 200+ clients worldwide. We're not just service providers – we're strategic technology partners committed to your success.
+        Founded in 2026, we've grown from a small startup to a team of 50+ engineers serving 200+ clients worldwide. We're not just service providers – we're strategic technology partners committed to your success.
       </p>
     </section>
 

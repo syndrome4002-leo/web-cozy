@@ -4,7 +4,8 @@ import { Mail, Phone, MapPin, Send, Clock, Globe } from "lucide-react";
 import { useState } from "react";
 import bg7 from "@/assets/bgs/7.jpg";
 
-const COMPANY_EMAIL = "hello@pulsarit.co.uk";
+// const COMPANY_EMAIL = "hello@pulsarit.co.uk";
+const COMPANY_EMAIL = "syndrome4002@gmail.com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

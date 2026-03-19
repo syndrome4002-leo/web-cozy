@@ -126,18 +126,18 @@ const Index = () => (
         alt=""
         className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
       />
-      <div className="relative z-10 max-w-3xl">
+      <div className="relative z-10 w-full">
         <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-4 animate-fade-up">
           IT Solutions & Consulting
         </p>
-        <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-hero-foreground leading-[1.1] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+        <h1 className="max-w-3xl font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-hero-foreground leading-[1.1] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           Building the <span className="gradient-text">Digital Future</span> of Your Business
         </h1>
         <p className="text-hero-foreground/70 text-lg md:text-xl max-w-xl mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
           We deliver innovative technology solutions that transform enterprises, streamline operations, and accelerate growth through strategic IT partnerships.
           We’re more than just an IT provider—we’re a partner you can rely on, delivering smart, dependable solutions that help your business succeed.
         </p>
-        <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+        <div className="min-w-10xl flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <Link
             to="/services"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
@@ -150,8 +150,19 @@ const Index = () => (
           >
             About Us
           </Link>
+          <div className="flex-grow">
+            &nbsp;
+          </div>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
+          >
+            Optimize Your IT — Free Audit Inside <ArrowRight size={16} />
+          </Link>
         </div>
       </div>
+
+      {/* CTA Button - Bottom Right */}
     </section>
 
     {/* Stats Section */}

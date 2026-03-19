@@ -12,7 +12,7 @@ const Footer = () => (
           </h3>
         </div>
         <p className="text-sm leading-relaxed max-w-xs">
-          Empowering businesses with cutting-edge technology solutions since 2015.
+          Empowering businesses with cutting-edge technology solutions since 2026.
         </p>
       </div>
       <div>
