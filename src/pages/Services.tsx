@@ -92,6 +92,16 @@ const services = [
 
 const serviceDetails = [
   {
+    title: "Professional Services",
+    icon: Code,
+    overview: "Expert IT consultancy and professional services designed to optimise performance, efficiency, and growth.",
+    benefits: [
+      "Expert IT consultancy focused on designing robust network and server strategies for growing businesses",
+      "Independent, vendor-neutral advice to help you choose the right technologies with confidence",
+      "Deep technical knowledge to assess, optimise, and future-proof your existing infrastructure",
+      "Strategic guidance to support scalability, performance, and long-term business success"
+    ]
+  },{
     title: "Cybersecurity Solutions",
     icon: Shield,
     overview: "Advanced defense with real-time threat detection",
